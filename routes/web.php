@@ -11,12 +11,9 @@
 |
 */
 
-Route::get('/', [
-    'as' => 'home',
-    function() {
-        echo 'My Name is "Home".';
-    }
-]);
-Route::get('/home', function() {
-    return redirect(route('home'));
+Route::get('/', function() {
+    return view('welcome', [
+        'name' => 'Foo',
+        'greeting' => 'Good Morning, ',
+    ]);
 });
