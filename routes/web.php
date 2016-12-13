@@ -11,6 +11,36 @@
 |
 */
 
-Route::get('/', function() {
-    return view('welcome');
+Route::get('/', 'HomeController@index');
+
+Route::get('auth/login', function() {
+    $credentials = [
+        'email' => 'john@example.com',
+        'password' => 'password',
+    ];
+    if (! auth()->attempt($credentials)) {
+        return '로그인 정보가 정확하지 않습니다.';
+    }
+    return redirect('protected');
 });
+
+Route::get('protected', ['middleware'=>'auth', function() {
+    dump(session()->all());
+    return auth()->user()->name;
+}]);
+
+Route::get('auth/logout', function () {
+    auth()->logout();
+    return '또 봐요~';
+});
+
+Route::any('articles', function() {
+    return 'any';
+});
+Route::resource('articles', 'ArticlesController');
+Route::put('articles/{article}', 'ArticlesController@overrideUpdate');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
