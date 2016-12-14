@@ -8,7 +8,7 @@ class Article extends Model
 {
     protected $fillable = ['title', 'content'];
 
-    public function uAppser()
+    public function user()
     {
         return $this->belongsTo(User::class);
     }

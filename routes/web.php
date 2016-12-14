@@ -44,3 +44,7 @@ Route::put('articles/{article}', 'ArticlesController@overrideUpdate');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+//DB::listen(function ($query){
+//    dump($query);
+//});
