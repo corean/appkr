@@ -14,7 +14,7 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        $articles = \App\Article::latest()->paginate(3);
+        $articles = \App\Article::with('user')->latest()->paginate(3);
 
         return view('articles.index', compact('articles'));
     }
@@ -32,7 +32,7 @@ class ArticlesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\ArticlesRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(ArticlesRequest $request)
@@ -42,6 +42,9 @@ class ArticlesController extends Controller
         if (! $article) {
             return back()->with('flash_message', '글이 저장되지 않았습니다.')->withInput();
         }
+
+        /* 이벤트 */
+        event(new \App\Events\ArticlesEvent($article));
 
         return redirect(route('articles.index'))->with('flash_message', '글이 저장되었습니다.');
     }

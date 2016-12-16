@@ -48,3 +48,4 @@ Route::get('/home', 'HomeController@index');
 //DB::listen(function ($query){
 //    dump($query);
 //});
+
