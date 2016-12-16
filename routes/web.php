@@ -47,5 +47,6 @@ Route::get('/home', 'HomeController@index');
 
 //DB::listen(function ($query){
 //    dump($query);
+//    printf('%s <br>', $query->sql);
 //});
 

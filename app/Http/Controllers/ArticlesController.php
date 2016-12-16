@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use App\Http\Requests\ArticlesRequest;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,7 @@ class ArticlesController extends Controller
     public function index()
     {
         $articles = \App\Article::with('user')->latest()->paginate(3);
-
+//        dd(view('articles.index', compact('articles'))->render());
         return view('articles.index', compact('articles'));
     }
 
@@ -33,7 +34,7 @@ class ArticlesController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \App\Http\Requests\ArticlesRequest  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(ArticlesRequest $request)
     {
@@ -53,18 +54,19 @@ class ArticlesController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return string
      */
     public function show($id)
     {
-        return __METHOD__ . '은 다음 키를 가진 Articles 모델을 조회합니다.'.$id;
+        $article = Article::FindOrFail($id);
+        return view('articles.index', compact('article'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return string
      */
     public function edit($id)
     {
@@ -76,7 +78,7 @@ class ArticlesController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return string
      */
     public function update(Request $request, $id)
     {
