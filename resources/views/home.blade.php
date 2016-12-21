@@ -15,3 +15,9 @@
     </div>
 </div>
 @endsection
+
+@section('script')
+    <script>
+        $('#flash-overlay-modal').modal();
+    </script>
+@endsection

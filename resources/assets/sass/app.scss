@@ -9,7 +9,7 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
 
-#app {
+#app-layout {
   .docs__sidebar {
     margin-top: 20px;
   }
@@ -19,6 +19,7 @@
   }
   //https://github.com/daylerees/colour-schemes/blob/master/highlightjs/peacock.css
   //@import url(https://raw.githubusercontent.com/daylerees/colour-schemes/master/highlightjs/peacock.css);
+
   .hljs {
     display: block;
     padding: 0.5em;

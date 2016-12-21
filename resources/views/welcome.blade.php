@@ -8,7 +8,7 @@
 
 @section('content')
     <p>자식 뷰 'content' 섹션</p>
-    @include('partials.footer')
+    @include('layouts.partials.footer')
 @endsection
 
 @section('script')
