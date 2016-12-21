@@ -13,8 +13,18 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
+/**
+ * https://highlightjs.org
+ * http://daylerees.github.io/
+ *
+ */
+
+
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    ready() {
+        hljs.initHighlightingOnLoad();
+    }
 });
