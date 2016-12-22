@@ -47,7 +47,7 @@ class UsersEventListner
         );
     }
 
-    public function onUserCreate(\App\Events\userCreated $event)
+    public function onUserCreated(\App\Events\userCreated $event)
     {
         $user = $event->user;
         \Mail::send(

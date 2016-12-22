@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 class UsersController extends Controller
 {
@@ -35,7 +34,13 @@ class UsersController extends Controller
         //이벤트처리
         event(new \App\Events\userCreated($user));
 
-        return respondCreated('가입하신 ' . $request->input('email') . '으로 확인 메일을 보내드렸습니다. 가입 확인하시고 로그인해 주세요.');
+        return $this->respondCreated('가입하신 ' . $request->input('email') . '으로 확인 메일을 보내드렸습니다. 가입 확인하시고 로그인해 주세요.');
+    }
+
+    protected function respondCreated($message)
+    {
+        flash($message);
+        return redirect('/');
     }
 
     public function confirm($code)
@@ -50,12 +55,6 @@ class UsersController extends Controller
         $user->save();
 
         auth()->login($user);
-        return respondCreated(auth()->user()->name . '님, 환영합니다. 가입이 확인되었습니다.');
-    }
-
-    protected function respondCreated($message)
-    {
-        flash($message);
-        return redirect('/');
+        return $this->respondCreated(auth()->user()->name . '님, 환영합니다. 가입이 확인되었습니다.');
     }
 }
