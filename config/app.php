@@ -180,6 +180,11 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
+        /**
+         * 라우트를 알기쉽게 표시해줌. localhost/routes
+         * https://github.com/garygreen/prety-routes
+         */
+        PrettyRoutes\ServiceProvider::class,
 
     ],
 

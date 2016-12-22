@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.3.26 on 2016-12-15.
+ * Generated for Laravel 5.3.26 on 2016-12-22.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -6309,6 +6309,20 @@ namespace {
 
 
     class Log extends \Illuminate\Support\Facades\Log{
+
+        /**
+         * Log a message to the logs.
+         *
+         * @param string $level
+         * @param string $message
+         * @param array $context
+         * @return void
+         * @static
+         */
+        public static function log($level, $message, $context = array())
+        {
+            \Illuminate\Log\Writer::log($level, $message, $context);
+        }
         
         /**
          * Adds a log record at the DEBUG level.
@@ -6316,7 +6330,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function debug($message, $context = array()){
             return \Monolog\Logger::debug($message, $context);
@@ -6328,7 +6342,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function info($message, $context = array()){
             return \Monolog\Logger::info($message, $context);
@@ -6340,7 +6354,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function notice($message, $context = array()){
             return \Monolog\Logger::notice($message, $context);
@@ -6352,7 +6366,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function warning($message, $context = array()){
             return \Monolog\Logger::warning($message, $context);
@@ -6364,7 +6378,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function error($message, $context = array()){
             return \Monolog\Logger::error($message, $context);
@@ -6376,7 +6390,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function critical($message, $context = array()){
             return \Monolog\Logger::critical($message, $context);
@@ -6388,7 +6402,7 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function alert($message, $context = array()){
             return \Monolog\Logger::alert($message, $context);
@@ -6400,23 +6414,10 @@ namespace {
          * @param string $message The log message
          * @param array $context The log context
          * @return Boolean Whether the record has been processed
-         * @static 
+         * @static
          */
         public static function emergency($message, $context = array()){
             return \Monolog\Logger::emergency($message, $context);
-        }
-        
-        /**
-         * Log a message to the logs.
-         *
-         * @param string $level
-         * @param string $message
-         * @param array $context
-         * @return void 
-         * @static 
-         */
-        public static function log($level, $message, $context = array()){
-            \Illuminate\Log\Writer::log($level, $message, $context);
         }
         
         /**
@@ -11874,6 +11875,156 @@ namespace {
             return \Illuminate\View\Factory::getNames();
         }
         
+    }
+
+
+    class Image extends \Intervention\Image\Facades\Image
+    {
+
+        /**
+         * Overrides configuration settings
+         *
+         * @param array $config
+         * @static
+         */
+        public static function configure($config = array())
+        {
+            return \Intervention\Image\ImageManager::configure($config);
+        }
+
+        /**
+         * Initiates an Image instance from different input types
+         *
+         * @param mixed $data
+         * @return \Intervention\Image\Image
+         * @static
+         */
+        public static function make($data)
+        {
+            return \Intervention\Image\ImageManager::make($data);
+        }
+
+        /**
+         * Creates an empty image canvas
+         *
+         * @param integer $width
+         * @param integer $height
+         * @param mixed $background
+         * @return \Intervention\Image\Image
+         * @static
+         */
+        public static function canvas($width, $height, $background = null)
+        {
+            return \Intervention\Image\ImageManager::canvas($width, $height, $background);
+        }
+
+        /**
+         * Create new cached image and run callback
+         * (requires additional package intervention/imagecache)
+         *
+         * @param \Closure $callback
+         * @param integer $lifetime
+         * @param boolean $returnObj
+         * @return \Image
+         * @static
+         */
+        public static function cache($callback, $lifetime = null, $returnObj = false)
+        {
+            return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+
+    }
+
+
+    class Flash extends \Laracasts\Flash\Flash
+    {
+
+        /**
+         * Flash an information message.
+         *
+         * @param string $message
+         * @return $this
+         * @static
+         */
+        public static function info($message)
+        {
+            return \Laracasts\Flash\FlashNotifier::info($message);
+        }
+
+        /**
+         * Flash a success message.
+         *
+         * @param string $message
+         * @return $this
+         * @static
+         */
+        public static function success($message)
+        {
+            return \Laracasts\Flash\FlashNotifier::success($message);
+        }
+
+        /**
+         * Flash an error message.
+         *
+         * @param string $message
+         * @return $this
+         * @static
+         */
+        public static function error($message)
+        {
+            return \Laracasts\Flash\FlashNotifier::error($message);
+        }
+
+        /**
+         * Flash a warning message.
+         *
+         * @param string $message
+         * @return $this
+         * @static
+         */
+        public static function warning($message)
+        {
+            return \Laracasts\Flash\FlashNotifier::warning($message);
+        }
+
+        /**
+         * Flash an overlay modal.
+         *
+         * @param string $message
+         * @param string $title
+         * @param string $level
+         * @return $this
+         * @static
+         */
+        public static function overlay($message, $title = 'Notice', $level = 'info')
+        {
+            return \Laracasts\Flash\FlashNotifier::overlay($message, $title, $level);
+        }
+
+        /**
+         * Flash a general message.
+         *
+         * @param string $message
+         * @param string $level
+         * @return $this
+         * @static
+         */
+        public static function message($message, $level = 'info')
+        {
+            return \Laracasts\Flash\FlashNotifier::message($message, $level);
+        }
+
+        /**
+         * Add an "important" flash to the session.
+         *
+         * @return $this
+         * @static
+         */
+        public static function important()
+        {
+            return \Laracasts\Flash\FlashNotifier::important();
+        }
+
     }
 
 

@@ -12,38 +12,89 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 
-Route::get('auth/login', function() {
-    $credentials = [
-        'email' => 'john@example.com',
-        'password' => 'password',
-    ];
-    if (! auth()->attempt($credentials)) {
-        return '로그인 정보가 정확하지 않습니다.';
-    }
-    return redirect('protected');
-});
+//사용자 가입
+Route::get('auth/register', [
+    'as' => 'users.create',
+    'uses' => 'UsersController@create',
+]);
+Route::post('auth/register', [
+    'as' => 'users.store',
+    'uses' => 'UsersController@store',
+]);
+Route::get('auth/confirm/{code}', [
+    'as' => 'users.confirm',
+    'uses' => 'UsersController@confirm',
+])->where('name', '[\pL-\pN]{60}');
+
+//사용자 인증
+Route::get('auth/login', [
+    'as' => 'sessions.create',
+    'uses' => 'SessionsController@create',
+]);
+Route::post('auth/login', [
+    'as' => 'sessions.store',
+    'uses' => 'SessionsController@store',
+]);
+Route::get('auth/logout', [
+    'as' => 'sessions.destory',
+    'uses' => 'SessionsController@destory',
+]);
+Route::post('auth/logout', [
+    'as' => 'sessions.destory',
+    'uses' => 'SessionsController@destory',
+]);
+
+//비밀번호 초기화
+Route::get('auth/remind', [
+    'as' => 'remind.create',
+    'uses' => 'PasswordsController@getRemind',
+]);
+Route::post('auth/remind', [
+    'as' => 'remind.store',
+    'uses' => 'PasswordsController@postRemind',
+]);
+Route::get('auth/reset/{token}', [
+    'as' => 'reset.create',
+    'uses' => 'PasswordsController@getReset',
+])->where('name', '[\pL-\pN]{64}');
+Route::post('auth/reset', [
+    'as' => 'reset.store',
+    'uses' => 'PasswordsController@postReset',
+]);
+
+//Auth::routes();
+
+
+//Route::get('auth/login', function() {
+//    $credentials = [
+//        'email' => 'john@example.com',
+//        'password' => 'password',
+//    ];
+//    if (! auth()->attempt($credentials)) {
+//        return '로그인 정보가 정확하지 않습니다.';
+//    }
+//    return redirect('protected');
+//});
 
 Route::get('protected', ['middleware'=>'auth', function() {
     dump(session()->all());
     return auth()->user()->name;
 }]);
 
-Route::get('auth/logout', function () {
-    auth()->logout();
-    return '또 봐요~';
-});
+//Route::get('auth/logout', function () {
+//    auth()->logout();
+//    return '또 봐요~';
+//});
 
-Route::any('articles', function() {
-    return 'any';
-});
-Route::resource('articles', 'ArticlesController');
-Route::put('articles/{article}', 'ArticlesController@overrideUpdate');
+//Route::any('articles', function() {
+//    return 'any';
+//});
+//Route::resource('articles', 'ArticlesController');
+//Route::put('articles/{article}', 'ArticlesController@overrideUpdate');
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
 
 //DB::listen(function ($query){
 //    dump($query);
@@ -71,3 +122,5 @@ EOT;
 
 Route::get('docs/{file?}', 'DocsController@show');
 Route::get('docs/images/{image}', 'DocsController@image')->where('image', '[\pL-\pN\._-]+-img-[0-9]{2}.png');
+
+
