@@ -6,3 +6,11 @@ if (!function_exists('markdown')) {
         return app(ParsedownExtra::class)->text($text);
     }
 }
+
+if (!function_exists('ddClass')) {
+    function ddClass()
+    {
+//        return dd(get_parent_class() . ':' );
+    }
+}
+

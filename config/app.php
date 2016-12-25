@@ -185,6 +185,7 @@ return [
          * https://github.com/garygreen/prety-routes
          */
         PrettyRoutes\ServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -235,7 +236,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Flash' => Laracasts\Flash\Flash::class,
-
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

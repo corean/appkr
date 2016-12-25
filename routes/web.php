@@ -64,6 +64,12 @@ Route::post('auth/reset', [
     'uses' => 'PasswordsController@postReset',
 ]);
 
+//소셜로그인
+Route::get('social/{provider}', [
+    'as' => 'social.login',
+    'uses' => 'SocialController@execute',
+]);
+
 //Auth::routes();
 
 

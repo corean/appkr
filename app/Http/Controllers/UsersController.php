@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    public function __construct()
+    function __construct()
     {
         $this->middleware('guest');
     }
@@ -17,6 +17,37 @@ class UsersController extends Controller
     }
 
     public function store(Request $request)
+    {
+
+        if ($socialUser = \App\User::socialUser($request->get('email'))->first()) {
+            return $this->updateSocialAccount($request, $socialUser);
+        }
+
+        return $this->createNativeAccount($request);
+    }
+
+    public function updateSocialAccount(Request $request, \App\User $user)
+    {
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'email' => 'required|email|max:255',
+            'password' => 'required|min:4|confirmed',
+        ]);
+        $user->update([
+            'name' => $request->input('name'),
+            'password' => bcrypt($request->input('password')),
+        ]);
+        auth()->login($user);
+        return $this->respondCreated($user->name . '님, 환영합니다.');
+    }
+
+    protected function respondCreated($message)
+    {
+        flash($message);
+        return redirect('/');
+    }
+
+    public function createNativeAccount($request)
     {
         $this->validate($request, [
             'name' => 'required|max:255',
@@ -35,12 +66,6 @@ class UsersController extends Controller
         event(new \App\Events\userCreated($user));
 
         return $this->respondCreated('가입하신 ' . $request->input('email') . '으로 확인 메일을 보내드렸습니다. 가입 확인하시고 로그인해 주세요.');
-    }
-
-    protected function respondCreated($message)
-    {
-        flash($message);
-        return redirect('/');
     }
 
     public function confirm($code)

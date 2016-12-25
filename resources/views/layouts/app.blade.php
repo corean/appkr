@@ -26,13 +26,14 @@
 
 <div class="container">
     @include('flash::message')
-        @yield('content')
-    </div>
+    @yield('content')
+</div>
 
 @include('layouts.partials.footer')
 
-    <!-- Scripts -->
-    <script src="{{ elixir('js/app.js') }}"></script>
+<!-- Scripts -->
+<script src="{{ elixir('js/app.js') }}"></script>
 @yield('script')
+
 </body>
 </html>
