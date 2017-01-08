@@ -1,0 +1,135 @@
+{
+  "__meta": {
+    "id": "f02320aa5076b56c97f18f34f515f718",
+    "datetime": "2017-01-08 14:35:32",
+    "utime": 1483886132.760314,
+    "method": "POST",
+    "uri": "\/articles",
+    "ip": "127.0.0.1"
+  },
+  "php": {
+    "version": "7.1.0",
+    "interface": "fpm-fcgi"
+  },
+  "messages": {
+    "count": 0,
+    "messages": []
+  },
+  "time": {
+    "start": 1483886132.625974,
+    "end": 1483886132.760347,
+    "duration": 0.13437294960021973,
+    "duration_str": "134.37ms",
+    "measures": [
+      {
+        "label": "Booting",
+        "start": 1483886132.625974,
+        "relative_start": 0,
+        "end": 1483886132.695434,
+        "relative_end": 1483886132.695434,
+        "duration": 0.06946015357971191,
+        "duration_str": "69.46ms",
+        "params": [],
+        "collector": null
+      },
+      {
+        "label": "Application",
+        "start": 1483886132.680444,
+        "relative_start": 0.054470062255859375,
+        "end": 1483886132.76035,
+        "relative_end": 3.0994415283203125e-6,
+        "duration": 0.07990598678588867,
+        "duration_str": "79.91ms",
+        "params": [],
+        "collector": null
+      }
+    ]
+  },
+  "memory": {
+    "peak_usage": 6291456,
+    "peak_usage_str": "6MB"
+  },
+  "exceptions": {
+    "count": 1,
+    "exceptions": [
+      {
+        "type": "Illuminate\\Validation\\ValidationException",
+        "message": "The given data failed to pass validation.",
+        "code": 0,
+        "file": "\/Users\/corean\/Sites\/appkr\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/FormRequest.php",
+        "line": 115,
+        "surrounding_lines": [
+          "     *\/\n",
+          "    protected function failedValidation(Validator $validator)\n",
+          "    {\n",
+          "        throw new ValidationException($validator, $this->response(\n",
+          "            $this->formatErrors($validator)\n",
+          "        ));\n",
+          "    }\n"
+        ]
+      }
+    ]
+  },
+  "views": {
+    "nb_templates": 0,
+    "templates": []
+  },
+  "route": {
+    "uri": "POST articles",
+    "middleware": "web",
+    "as": "articles.store",
+    "controller": "App\\Http\\Controllers\\ArticlesController@store",
+    "namespace": "App\\Http\\Controllers",
+    "prefix": null,
+    "where": [],
+    "file": "app\/Http\/Controllers\/ArticlesController.php:47-60"
+  },
+  "queries": {
+    "nb_statements": 1,
+    "nb_failed_statements": 0,
+    "accumulated_duration": 0.00421,
+    "accumulated_duration_str": "4.21ms",
+    "statements": [
+      {
+        "sql": "select * from `users` where `users`.`id` = '24' limit 1",
+        "params": {
+          "0": "24",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+        },
+        "duration": 0.00421,
+        "duration_str": "4.21ms",
+        "stmt_id": null,
+        "connection": "appkr"
+      }
+    ]
+  },
+  "swiftmailer_mails": {
+    "count": 0,
+    "mails": []
+  },
+  "session": {
+    "_token": "OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH",
+    "_previous": "array:1 [\n  \"url\" => \"http:\/\/appkr.dev\/articles\/create\"\n]",
+    "_flash": "array:2 [\n  \"old\" => []\n  \"new\" => array:2 [\n    0 => \"_old_input\"\n    1 => \"errors\"\n  ]\n]",
+    "flash_notification": "[]",
+    "url": "array:1 [\n  \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n]",
+    "login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "24",
+    "PHPDEBUGBAR_STACK_DATA": "[]",
+    "_old_input": "array:3 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"title\" => \"test\"\n  \"content\" => \"test\"\n]",
+    "errors": "Illuminate\\Support\\ViewErrorBag {#329\n  #bags: array:1 [\n    \"default\" => Illuminate\\Support\\MessageBag {#331\n      #messages: array:1 [\n        \"content\" => array:1 [\n          0 => \"\ubcf8\ubb38\uc740 \ucd5c\uc18c 10\uc790 \uc774\uc0c1 \uc785\ub825\ud574\uc57c\ud569\ub2c8\ub2e4.\"\n        ]\n      ]\n      #format: \":message\"\n    }\n  ]\n}"
+  },
+  "request": {
+    "format": "html",
+    "content_type": "text\/html; charset=UTF-8",
+    "status_text": "Found",
+    "status_code": "302",
+    "request_query": "[]",
+    "request_request": "array:3 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"title\" => \"test\"\n  \"content\" => \"test\"\n]",
+    "request_headers": "array:13 [\n  \"cookie\" => array:1 [\n    0 => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6IkdyTklaWGlWTVwvbFZWWjl1anRKUlF3PT0iLCJ2YWx1ZSI6InJGWVwvV1hnbU1TQnE0QWNDaUh3MDk5OTMzZm15dlZuOE9iMzJOQjhvZGlcL21GZUNvSGRJXC8wb3pqcEg1QXorRXlmblwvQmo0cWN4VTRpWHQ5OENRQzFyZz09IiwibWFjIjoiNTY4M2VjOTE3NThhNmQxZTQ1MTA3MjY2MTMxZTI1Zjc4YThhOTY2MjNhM2JjOTM1YzY4MGY4NzgzMjA4NzBiMCJ9; laravel_session=eyJpdiI6ImsrMzFGcWdVMGQ2eDZtNjI1R1E5bHc9PSIsInZhbHVlIjoiZHk2SGxXaUtLak1JdDMyZTF5WDkyV0pwcWFnOUpXUktTcEJLUVBvelMxVHVjMjFPUnRackNPOFR2Y2NTaE9ySDRmVzNyaU94cm53RWlSTmlKUmdTZkE9PSIsIm1hYyI6ImFkZjk5ZTVmYWZlZTZjNTg3YmFmNDliYTkyN2M4NGVlYzMxMDAyOGZiNzc0Yzk4ZjEyMzcwOTBkMGRlYWFmYTkifQ%3D%3D\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"application\/x-www-form-urlencoded\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"origin\" => array:1 [\n    0 => \"http:\/\/appkr.dev\"\n  ]\n  \"cache-control\" => array:1 [\n    0 => \"max-age=0\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"71\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"host\" => array:1 [\n    0 => \"appkr.dev\"\n  ]\n]",
+    "request_server": "array:37 [\n  \"USER\" => \"corean\"\n  \"HOME\" => \"\/Users\/corean\"\n  \"HTTP_COOKIE\" => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6IkdyTklaWGlWTVwvbFZWWjl1anRKUlF3PT0iLCJ2YWx1ZSI6InJGWVwvV1hnbU1TQnE0QWNDaUh3MDk5OTMzZm15dlZuOE9iMzJOQjhvZGlcL21GZUNvSGRJXC8wb3pqcEg1QXorRXlmblwvQmo0cWN4VTRpWHQ5OENRQzFyZz09IiwibWFjIjoiNTY4M2VjOTE3NThhNmQxZTQ1MTA3MjY2MTMxZTI1Zjc4YThhOTY2MjNhM2JjOTM1YzY4MGY4NzgzMjA4NzBiMCJ9; laravel_session=eyJpdiI6ImsrMzFGcWdVMGQ2eDZtNjI1R1E5bHc9PSIsInZhbHVlIjoiZHk2SGxXaUtLak1JdDMyZTF5WDkyV0pwcWFnOUpXUktTcEJLUVBvelMxVHVjMjFPUnRackNPOFR2Y2NTaE9ySDRmVzNyaU94cm53RWlSTmlKUmdTZkE9PSIsIm1hYyI6ImFkZjk5ZTVmYWZlZTZjNTg3YmFmNDliYTkyN2M4NGVlYzMxMDAyOGZiNzc0Yzk4ZjEyMzcwOTBkMGRlYWFmYTkifQ%3D%3D\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate\"\n  \"HTTP_REFERER\" => \"http:\/\/appkr.dev\/articles\/create\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  \"HTTP_CONTENT_TYPE\" => \"application\/x-www-form-urlencoded\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_ORIGIN\" => \"http:\/\/appkr.dev\"\n  \"HTTP_CACHE_CONTROL\" => \"max-age=0\"\n  \"HTTP_CONTENT_LENGTH\" => \"71\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_HOST\" => \"appkr.dev\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"SERVER_NAME\" => \"\"\n  \"SERVER_PORT\" => \"80\"\n  \"SERVER_ADDR\" => \"127.0.0.1\"\n  \"REMOTE_PORT\" => \"53265\"\n  \"REMOTE_ADDR\" => \"127.0.0.1\"\n  \"SERVER_SOFTWARE\" => \"nginx\/1.10.2\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"DOCUMENT_ROOT\" => \"\"\n  \"DOCUMENT_URI\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_URI\" => \"\/articles\"\n  \"SCRIPT_NAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"CONTENT_LENGTH\" => \"71\"\n  \"CONTENT_TYPE\" => \"application\/x-www-form-urlencoded\"\n  \"REQUEST_METHOD\" => \"POST\"\n  \"QUERY_STRING\" => \"\"\n  \"FCGI_ROLE\" => \"RESPONDER\"\n  \"PHP_SELF\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_TIME_FLOAT\" => 1483886132.626\n  \"REQUEST_TIME\" => 1483886132\n]",
+    "request_cookies": "array:4 [\n  \"XDEBUG_SESSION\" => null\n  \"io\" => null\n  \"XSRF-TOKEN\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"laravel_session\" => \"0Szj5tRfVGVVoURxcuxmhZTDcFa2GN3rUze9BscG\"\n]",
+    "response_headers": "array:4 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"location\" => array:1 [\n    0 => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6IkNCeUdkRzdjdVFpV3k5dWlQTVJTdVE9PSIsInZhbHVlIjoib25FRVNhTU1QM04xaytoRTBudUNITStyK0tFRUg3cENTWlRnaFJEbkJ5ZDZHWlFUZTdvbUJCbDVMeXVCQlpzZWV2U2N2ZE1FU2RuRmFnMGh0M2tEeWc9PSIsIm1hYyI6Ijg3NjIzMGE5Y2ZmNWU1OTJmMDZjNTMzYjA2ZDY2NmJiZWNmNWIwMjU3MGU0ZDQ3MWRkMjliNTE0OTA4OTFiMGMifQ%3D%3D; expires=Sun, 08-Jan-2017 17:35:32 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6ImJycTNNNTVzTFducitWQzdYTTZBSUE9PSIsInZhbHVlIjoiRnptZUtrOFNDbEd3RzZEOEI1Y3ZqVDJHK2R3RE9QMFB1RTIzTko5V1NQVGdqc3lSVUY1SjZ2bHdwbzl2SDhYQWV2NldxNUttOXBjN2dYbm91NmdZRVE9PSIsIm1hYyI6ImVkYmZlY2YxNjM4YzQ2ZDQxYWJlODM0NWNlODg4NjBlMTY4ZDZkMjM4MWJhMTkzMTA1ZDVlNTU4NzhiNmRmZDEifQ%3D%3D; expires=Sun, 08-Jan-2017 17:35:32 GMT; path=\/; httponly\"\n  ]\n]",
+    "path_info": "\/articles",
+    "session_attributes": "array:9 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"_flash\" => array:2 [\n    \"old\" => []\n    \"new\" => array:2 [\n      0 => \"_old_input\"\n      1 => \"errors\"\n    ]\n  ]\n  \"flash_notification\" => []\n  \"url\" => array:1 [\n    \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 24\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n  \"_old_input\" => array:3 [\n    \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n    \"title\" => \"test\"\n    \"content\" => \"test\"\n  ]\n  \"errors\" => Illuminate\\Support\\ViewErrorBag {#329\n    #bags: array:1 [\n      \"default\" => Illuminate\\Support\\MessageBag {#331\n        #messages: array:1 [\n          \"content\" => array:1 [\n            0 => \"\ubcf8\ubb38\uc740 \ucd5c\uc18c 10\uc790 \uc774\uc0c1 \uc785\ub825\ud574\uc57c\ud569\ub2c8\ub2e4.\"\n          ]\n        ]\n        #format: \":message\"\n      }\n    ]\n  }\n]"
+  }
+}

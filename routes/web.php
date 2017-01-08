@@ -70,6 +70,8 @@ Route::get('social/{provider}', [
     'uses' => 'SocialController@execute',
 ]);
 
+Route::resource('articles', 'ArticlesController');
+
 //Auth::routes();
 
 
@@ -97,7 +99,6 @@ Route::get('protected', ['middleware'=>'auth', function() {
 //Route::any('articles', function() {
 //    return 'any';
 //});
-//Route::resource('articles', 'ArticlesController');
 //Route::put('articles/{article}', 'ArticlesController@overrideUpdate');
 
 

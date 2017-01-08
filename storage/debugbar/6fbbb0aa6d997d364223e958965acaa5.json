@@ -1,0 +1,150 @@
+{
+  "__meta": {
+    "id": "6fbbb0aa6d997d364223e958965acaa5",
+    "datetime": "2017-01-08 13:46:42",
+    "utime": 1483883202.28541,
+    "method": "GET",
+    "uri": "\/",
+    "ip": "127.0.0.1"
+  },
+  "php": {
+    "version": "7.1.0",
+    "interface": "fpm-fcgi"
+  },
+  "messages": {
+    "count": 0,
+    "messages": []
+  },
+  "time": {
+    "start": 1483883199.396341,
+    "end": 1483883202.285453,
+    "duration": 2.8891119956970215,
+    "duration_str": "2.89s",
+    "measures": [
+      {
+        "label": "Booting",
+        "start": 1483883199.396341,
+        "relative_start": 0,
+        "end": 1483883201.595752,
+        "relative_end": 1483883201.595752,
+        "duration": 2.199410915374756,
+        "duration_str": "2.2s",
+        "params": [],
+        "collector": null
+      },
+      {
+        "label": "Application",
+        "start": 1483883200.893982,
+        "relative_start": 1.49764084815979,
+        "end": 1483883202.285456,
+        "relative_end": 2.86102294921875e-6,
+        "duration": 1.3914740085601807,
+        "duration_str": "1.39s",
+        "params": [],
+        "collector": null
+      }
+    ]
+  },
+  "memory": {
+    "peak_usage": 10485760,
+    "peak_usage_str": "10MB"
+  },
+  "exceptions": {
+    "count": 0,
+    "exceptions": []
+  },
+  "views": {
+    "nb_templates": 5,
+    "templates": [
+      {
+        "name": "home (resources\/views\/home.blade.php)",
+        "param_count": 0,
+        "params": [],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.app (resources\/views\/layouts\/app.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.navigation (resources\/views\/layouts\/partials\/navigation.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "flash::message (vendor\/laracasts\/flash\/src\/views\/message.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.footer (resources\/views\/layouts\/partials\/footer.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      }
+    ]
+  },
+  "route": {
+    "uri": "GET \/",
+    "middleware": "web",
+    "controller": "App\\Http\\Controllers\\HomeController@index",
+    "namespace": "App\\Http\\Controllers",
+    "prefix": null,
+    "where": [],
+    "file": "app\/Http\/Controllers\/HomeController.php:24-32"
+  },
+  "queries": {
+    "nb_statements": 0,
+    "nb_failed_statements": 0,
+    "accumulated_duration": 0,
+    "accumulated_duration_str": "0\u03bcs",
+    "statements": []
+  },
+  "swiftmailer_mails": {
+    "count": 0,
+    "mails": []
+  },
+  "session": {
+    "_token": "OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH",
+    "_previous": "array:1 [\n  \"url\" => \"http:\/\/appkr.dev\"\n]",
+    "PHPDEBUGBAR_STACK_DATA": "[]"
+  },
+  "request": {
+    "format": "html",
+    "content_type": "text\/html; charset=UTF-8",
+    "status_text": "OK",
+    "status_code": "200",
+    "request_query": "[]",
+    "request_request": "[]",
+    "request_headers": "array:10 [\n  \"cookie\" => array:1 [\n    0 => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, sdch\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"host\" => array:1 [\n    0 => \"appkr.dev\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"\"\n  ]\n]",
+    "request_server": "array:32 [\n  \"USER\" => \"corean\"\n  \"HOME\" => \"\/Users\/corean\"\n  \"HTTP_COOKIE\" => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, sdch\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_HOST\" => \"appkr.dev\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"SERVER_NAME\" => \"\"\n  \"SERVER_PORT\" => \"80\"\n  \"SERVER_ADDR\" => \"127.0.0.1\"\n  \"REMOTE_PORT\" => \"50802\"\n  \"REMOTE_ADDR\" => \"127.0.0.1\"\n  \"SERVER_SOFTWARE\" => \"nginx\/1.10.2\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"DOCUMENT_ROOT\" => \"\"\n  \"DOCUMENT_URI\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_URI\" => \"\/\"\n  \"SCRIPT_NAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"CONTENT_LENGTH\" => \"\"\n  \"CONTENT_TYPE\" => \"\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"QUERY_STRING\" => \"\"\n  \"FCGI_ROLE\" => \"RESPONDER\"\n  \"PHP_SELF\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_TIME_FLOAT\" => 1483883199.3963\n  \"REQUEST_TIME\" => 1483883199\n]",
+    "request_cookies": "array:2 [\n  \"XDEBUG_SESSION\" => null\n  \"io\" => null\n]",
+    "response_headers": "array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6IjdzT251MTVMRXl2NGRMZWkxWkxaVmc9PSIsInZhbHVlIjoiTW05b3dnN3ZBbE1CSDZDd1c1TE11UHNTbjFvZnhGNUlNblZHWXFFU3BUWGdvcW02NTY2UGVGa2U0b3krQVNPUXdBRU4yb0lFVk9VRWZyWWFXYkQ2SWc9PSIsIm1hYyI6ImQ5MTZmMDU4OTllOGIwY2IyODk2MDMxOWY3NzdlZGQ1MWNkZjEzOTc5MjdhMjc2NjM2ZDMxMjBhMTJjZTMxOGUifQ%3D%3D; expires=Sun, 08-Jan-2017 16:46:42 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6Ilg4dVhCNm5HU3I0bEdoRXhlSk45V3c9PSIsInZhbHVlIjoieXRzWnZ5MCtvVml3UFRUV2dJdEE0S0pWUXUrUUNseXpPMmJUVnJaRlVHeHV4SEVtYnNFWVVBU1BIMFwvK0I4TnRiOHpJN1IxYVwvRXV5N0dqeHhPbHZiQT09IiwibWFjIjoiZWE3ZGNjYTM5MmMxNzNiMDg0OTJiOTZkNjhlZjYyMTk4N2RhOWUwNzk0NmFhMjk2ZjhmZTQwYWE4MjZiYTQ0NiJ9; expires=Sun, 08-Jan-2017 16:46:42 GMT; path=\/; httponly\"\n  ]\n]",
+    "path_info": "\/",
+    "session_attributes": "array:3 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/appkr.dev\"\n  ]\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n]"
+  }
+}

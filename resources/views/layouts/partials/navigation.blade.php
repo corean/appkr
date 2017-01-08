@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                &nbsp;
+                <li><a href="{{ route('articles.index') }}">포</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->

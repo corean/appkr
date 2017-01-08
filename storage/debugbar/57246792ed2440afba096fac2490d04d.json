@@ -1,0 +1,330 @@
+{
+  "__meta": {
+    "id": "57246792ed2440afba096fac2490d04d",
+    "datetime": "2017-01-08 14:42:13",
+    "utime": 1483886533.733626,
+    "method": "GET",
+    "uri": "\/articles?page=5",
+    "ip": "127.0.0.1"
+  },
+  "php": {
+    "version": "7.1.0",
+    "interface": "fpm-fcgi"
+  },
+  "messages": {
+    "count": 0,
+    "messages": []
+  },
+  "time": {
+    "start": 1483886533.654379,
+    "end": 1483886533.733639,
+    "duration": 0.07926011085510254,
+    "duration_str": "79.26ms",
+    "measures": [
+      {
+        "label": "Booting",
+        "start": 1483886533.654379,
+        "relative_start": 0,
+        "end": 1483886533.704963,
+        "relative_end": 1483886533.704963,
+        "duration": 0.05058407783508301,
+        "duration_str": "50.58ms",
+        "params": [],
+        "collector": null
+      },
+      {
+        "label": "Application",
+        "start": 1483886533.692327,
+        "relative_start": 0.0379481315612793,
+        "end": 1483886533.733641,
+        "relative_end": 1.9073486328125e-6,
+        "duration": 0.041313886642456055,
+        "duration_str": "41.31ms",
+        "params": [],
+        "collector": null
+      }
+    ]
+  },
+  "memory": {
+    "peak_usage": 2097152,
+    "peak_usage_str": "2MB"
+  },
+  "exceptions": {
+    "count": 0,
+    "exceptions": []
+  },
+  "views": {
+    "nb_templates": 12,
+    "templates": [
+      {
+        "name": "articles.index (resources\/views\/articles\/index.blade.php)",
+        "param_count": 1,
+        "params": [
+          "articles"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "articles.partial.article (resources\/views\/articles\/partial\/article.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "users.partial.avatar (resources\/views\/users\/partial\/avatar.blade.php)",
+        "param_count": 10,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop",
+          "user"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "articles.partial.article (resources\/views\/articles\/partial\/article.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "users.partial.avatar (resources\/views\/users\/partial\/avatar.blade.php)",
+        "param_count": 10,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop",
+          "user"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "articles.partial.article (resources\/views\/articles\/partial\/article.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "users.partial.avatar (resources\/views\/users\/partial\/avatar.blade.php)",
+        "param_count": 10,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop",
+          "user"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "pagination::default (vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/resources\/views\/default.blade.php)",
+        "param_count": 2,
+        "params": [
+          "paginator",
+          "elements"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.app (resources\/views\/layouts\/app.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.navigation (resources\/views\/layouts\/partials\/navigation.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "flash::message (vendor\/laracasts\/flash\/src\/views\/message.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.footer (resources\/views\/layouts\/partials\/footer.blade.php)",
+        "param_count": 9,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "articles",
+          "__empty_1",
+          "__currentLoopData",
+          "article",
+          "loop"
+        ],
+        "type": "blade"
+      }
+    ]
+  },
+  "route": {
+    "uri": "GET articles",
+    "middleware": "web",
+    "as": "articles.index",
+    "controller": "App\\Http\\Controllers\\ArticlesController@index",
+    "namespace": "App\\Http\\Controllers",
+    "prefix": null,
+    "where": [],
+    "file": "app\/Http\/Controllers\/ArticlesController.php:24-29"
+  },
+  "queries": {
+    "nb_statements": 4,
+    "nb_failed_statements": 0,
+    "accumulated_duration": 0.0043300000000000005,
+    "accumulated_duration_str": "4.33ms",
+    "statements": [
+      {
+        "sql": "select count(*) as aggregate from `articles`",
+        "params": {
+          "hints": "The <code>SELECT<\/code> statement has no <code>WHERE<\/code> clause and could examine many more rows than intended"
+        },
+        "duration": 0.0028,
+        "duration_str": "2.8ms",
+        "stmt_id": null,
+        "connection": "appkr"
+      },
+      {
+        "sql": "select * from `articles` order by `created_at` desc limit 5 offset 20",
+        "params": {
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/>The <code>SELECT<\/code> statement has no <code>WHERE<\/code> clause and could examine many more rows than intended"
+        },
+        "duration": 0.00055,
+        "duration_str": "550\u03bcs",
+        "stmt_id": null,
+        "connection": "appkr"
+      },
+      {
+        "sql": "select * from `users` where `users`.`id` in ('1', '5', '3')",
+        "params": {
+          "0": "1",
+          "1": "5",
+          "2": "3",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table"
+        },
+        "duration": 0.00049,
+        "duration_str": "490\u03bcs",
+        "stmt_id": null,
+        "connection": "appkr"
+      },
+      {
+        "sql": "select * from `users` where `users`.`id` = '24' limit 1",
+        "params": {
+          "0": "24",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+        },
+        "duration": 0.00049,
+        "duration_str": "490\u03bcs",
+        "stmt_id": null,
+        "connection": "appkr"
+      }
+    ]
+  },
+  "swiftmailer_mails": {
+    "count": 0,
+    "mails": []
+  },
+  "session": {
+    "_token": "OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH",
+    "_previous": "array:1 [\n  \"url\" => \"http:\/\/appkr.dev\/articles?page=5\"\n]",
+    "_flash": "array:2 [\n  \"old\" => []\n  \"new\" => []\n]",
+    "flash_notification": "[]",
+    "url": "array:1 [\n  \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n]",
+    "login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "24",
+    "PHPDEBUGBAR_STACK_DATA": "[]"
+  },
+  "request": {
+    "format": "html",
+    "content_type": "text\/html; charset=UTF-8",
+    "status_text": "OK",
+    "status_code": "200",
+    "request_query": "array:1 [\n  \"page\" => \"5\"\n]",
+    "request_request": "array:1 [\n  \"page\" => \"5\"\n]",
+    "request_headers": "array:11 [\n  \"cookie\" => array:1 [\n    0 => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6IlQxdE80SWhtN0hZOGRqN280N3U0b1E9PSIsInZhbHVlIjoiOGRSWWRQZmFVajNraVVNVGI3cThmRHYzMVZFa0NDNkZ6S0p6OFlEYnBMUm5yZE1uMFRJaGFyZHpjaG5pZzdRcXI3czZzNEFHS2p2R0pDNzRKMTFwS0E9PSIsIm1hYyI6IjEzZTc3YjQ4MmUzZjM2OTVkMzJlZjU5YWMxOGFhNzhlNzM0YTA4MWJmZTdkZGNkMGQ5MzkyNmQyMThhMzc3YzAifQ%3D%3D; laravel_session=eyJpdiI6Ijk2T1V6TnZOQTJwd01DQnp0aUZcL3RRPT0iLCJ2YWx1ZSI6ImZvXC9tQTFSR01MWGZ6OThSZmRaRlZkb3NkRUJFbkxUallEczE3ZG5Kc1ZnS2toVDE2ZXMyMXNlZUZkajZyTFwvS2dtdkJnMFdzZ2VkSHorMHlPZTdOS3c9PSIsIm1hYyI6IjU1ZmY3ZTliNWFlMWM1YjQ1NDE0ZTMyMWFjNjNhNjQ2MGJlZmRkZTNhZWI0YWI1NzAyMjRjOGIwZGMwMzg1MjkifQ%3D%3D\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, sdch\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/appkr.dev\/articles?page=4\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"host\" => array:1 [\n    0 => \"appkr.dev\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"\"\n  ]\n]",
+    "request_server": "array:33 [\n  \"USER\" => \"corean\"\n  \"HOME\" => \"\/Users\/corean\"\n  \"HTTP_COOKIE\" => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6IlQxdE80SWhtN0hZOGRqN280N3U0b1E9PSIsInZhbHVlIjoiOGRSWWRQZmFVajNraVVNVGI3cThmRHYzMVZFa0NDNkZ6S0p6OFlEYnBMUm5yZE1uMFRJaGFyZHpjaG5pZzdRcXI3czZzNEFHS2p2R0pDNzRKMTFwS0E9PSIsIm1hYyI6IjEzZTc3YjQ4MmUzZjM2OTVkMzJlZjU5YWMxOGFhNzhlNzM0YTA4MWJmZTdkZGNkMGQ5MzkyNmQyMThhMzc3YzAifQ%3D%3D; laravel_session=eyJpdiI6Ijk2T1V6TnZOQTJwd01DQnp0aUZcL3RRPT0iLCJ2YWx1ZSI6ImZvXC9tQTFSR01MWGZ6OThSZmRaRlZkb3NkRUJFbkxUallEczE3ZG5Kc1ZnS2toVDE2ZXMyMXNlZUZkajZyTFwvS2dtdkJnMFdzZ2VkSHorMHlPZTdOS3c9PSIsIm1hYyI6IjU1ZmY3ZTliNWFlMWM1YjQ1NDE0ZTMyMWFjNjNhNjQ2MGJlZmRkZTNhZWI0YWI1NzAyMjRjOGIwZGMwMzg1MjkifQ%3D%3D\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, sdch\"\n  \"HTTP_REFERER\" => \"http:\/\/appkr.dev\/articles?page=4\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_HOST\" => \"appkr.dev\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"SERVER_NAME\" => \"\"\n  \"SERVER_PORT\" => \"80\"\n  \"SERVER_ADDR\" => \"127.0.0.1\"\n  \"REMOTE_PORT\" => \"53362\"\n  \"REMOTE_ADDR\" => \"127.0.0.1\"\n  \"SERVER_SOFTWARE\" => \"nginx\/1.10.2\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"DOCUMENT_ROOT\" => \"\"\n  \"DOCUMENT_URI\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_URI\" => \"\/articles?page=5\"\n  \"SCRIPT_NAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"CONTENT_LENGTH\" => \"\"\n  \"CONTENT_TYPE\" => \"\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"QUERY_STRING\" => \"page=5\"\n  \"FCGI_ROLE\" => \"RESPONDER\"\n  \"PHP_SELF\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_TIME_FLOAT\" => 1483886533.6544\n  \"REQUEST_TIME\" => 1483886533\n]",
+    "request_cookies": "array:4 [\n  \"XDEBUG_SESSION\" => null\n  \"io\" => null\n  \"XSRF-TOKEN\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"laravel_session\" => \"0Szj5tRfVGVVoURxcuxmhZTDcFa2GN3rUze9BscG\"\n]",
+    "response_headers": "array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6Ikh4NnRWS3JTUXR4cVBKSHNiOHJHbVE9PSIsInZhbHVlIjoiblwvRHdJdFFOemMzNlA5UmxcL1E2SGIxdUE0SjlNdHIwUXg4K05idk9oNmQzdVlcLzdQYjU4RExmVThudVVaUCtcL09zYllrY2c3WVdlTWkzMEtSZk9UbmFnPT0iLCJtYWMiOiIzOWVkYmQxYjM1ODIyMzIxZGU2YjdhNmIyNjRhNzI0NTA5ZTJiOWU3MmExNTExZDNiMTM4Y2RlNzRlODA5NjAxIn0%3D; expires=Sun, 08-Jan-2017 17:42:13 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6IlpLcWlRMnBHendWTzZkZDNhYU1cL253PT0iLCJ2YWx1ZSI6ImkwZ2RLcGJhMmZqQnoyeU1LcEpFQzlMZ1crZm5uZjl6K01FK21ZdFRQMGxUMVltVk9ncWJtNEh5T1k2RzBVa2kyRnpDblJXS0lOSCtsQUlvUEdaYXN3PT0iLCJtYWMiOiIwNWI2NjNhYzlmOTMwNjI5NGUyYTkyNTZkMjM3Yjk5YTkyNTM3MjY5ZDY4ZGJmMmFhZTc5NzRlZWU1MjgzZjdmIn0%3D; expires=Sun, 08-Jan-2017 17:42:13 GMT; path=\/; httponly\"\n  ]\n]",
+    "path_info": "\/articles",
+    "session_attributes": "array:7 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/appkr.dev\/articles?page=5\"\n  ]\n  \"_flash\" => array:2 [\n    \"old\" => []\n    \"new\" => []\n  ]\n  \"flash_notification\" => []\n  \"url\" => array:1 [\n    \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 24\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n]"
+  }
+}

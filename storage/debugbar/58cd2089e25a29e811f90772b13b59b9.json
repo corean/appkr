@@ -1,0 +1,167 @@
+{
+  "__meta": {
+    "id": "58cd2089e25a29e811f90772b13b59b9",
+    "datetime": "2017-01-08 14:42:34",
+    "utime": 1483886554.050277,
+    "method": "GET",
+    "uri": "\/articles\/create",
+    "ip": "127.0.0.1"
+  },
+  "php": {
+    "version": "7.1.0",
+    "interface": "fpm-fcgi"
+  },
+  "messages": {
+    "count": 0,
+    "messages": []
+  },
+  "time": {
+    "start": 1483886553.963285,
+    "end": 1483886554.050297,
+    "duration": 0.08701205253601074,
+    "duration_str": "87.01ms",
+    "measures": [
+      {
+        "label": "Booting",
+        "start": 1483886553.963285,
+        "relative_start": 0,
+        "end": 1483886554.021727,
+        "relative_end": 1483886554.021727,
+        "duration": 0.058442115783691406,
+        "duration_str": "58.44ms",
+        "params": [],
+        "collector": null
+      },
+      {
+        "label": "Application",
+        "start": 1483886554.005996,
+        "relative_start": 0.04271101951599121,
+        "end": 1483886554.050299,
+        "relative_end": 1.9073486328125e-6,
+        "duration": 0.044302940368652344,
+        "duration_str": "44.3ms",
+        "params": [],
+        "collector": null
+      }
+    ]
+  },
+  "memory": {
+    "peak_usage": 2097152,
+    "peak_usage_str": "2MB"
+  },
+  "exceptions": {
+    "count": 0,
+    "exceptions": []
+  },
+  "views": {
+    "nb_templates": 5,
+    "templates": [
+      {
+        "name": "articles.create (resources\/views\/articles\/create.blade.php)",
+        "param_count": 0,
+        "params": [],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.app (resources\/views\/layouts\/app.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.navigation (resources\/views\/layouts\/partials\/navigation.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "flash::message (vendor\/laracasts\/flash\/src\/views\/message.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.footer (resources\/views\/layouts\/partials\/footer.blade.php)",
+        "param_count": 4,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors"
+        ],
+        "type": "blade"
+      }
+    ]
+  },
+  "route": {
+    "uri": "GET articles\/create",
+    "middleware": "web",
+    "as": "articles.create",
+    "controller": "App\\Http\\Controllers\\ArticlesController@create",
+    "namespace": "App\\Http\\Controllers",
+    "prefix": null,
+    "where": [],
+    "file": "app\/Http\/Controllers\/ArticlesController.php:36-39"
+  },
+  "queries": {
+    "nb_statements": 1,
+    "nb_failed_statements": 0,
+    "accumulated_duration": 0.00357,
+    "accumulated_duration_str": "3.57ms",
+    "statements": [
+      {
+        "sql": "select * from `users` where `users`.`id` = '24' limit 1",
+        "params": {
+          "0": "24",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+        },
+        "duration": 0.00357,
+        "duration_str": "3.57ms",
+        "stmt_id": null,
+        "connection": "appkr"
+      }
+    ]
+  },
+  "swiftmailer_mails": {
+    "count": 0,
+    "mails": []
+  },
+  "session": {
+    "_token": "OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH",
+    "_previous": "array:1 [\n  \"url\" => \"http:\/\/appkr.dev\/articles\/create\"\n]",
+    "_flash": "array:2 [\n  \"old\" => []\n  \"new\" => []\n]",
+    "flash_notification": "[]",
+    "url": "array:1 [\n  \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n]",
+    "login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "24",
+    "PHPDEBUGBAR_STACK_DATA": "[]"
+  },
+  "request": {
+    "format": "html",
+    "content_type": "text\/html; charset=UTF-8",
+    "status_text": "OK",
+    "status_code": "200",
+    "request_query": "[]",
+    "request_request": "[]",
+    "request_headers": "array:11 [\n  \"cookie\" => array:1 [\n    0 => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6Ikh4NnRWS3JTUXR4cVBKSHNiOHJHbVE9PSIsInZhbHVlIjoiblwvRHdJdFFOemMzNlA5UmxcL1E2SGIxdUE0SjlNdHIwUXg4K05idk9oNmQzdVlcLzdQYjU4RExmVThudVVaUCtcL09zYllrY2c3WVdlTWkzMEtSZk9UbmFnPT0iLCJtYWMiOiIzOWVkYmQxYjM1ODIyMzIxZGU2YjdhNmIyNjRhNzI0NTA5ZTJiOWU3MmExNTExZDNiMTM4Y2RlNzRlODA5NjAxIn0%3D; laravel_session=eyJpdiI6IlpLcWlRMnBHendWTzZkZDNhYU1cL253PT0iLCJ2YWx1ZSI6ImkwZ2RLcGJhMmZqQnoyeU1LcEpFQzlMZ1crZm5uZjl6K01FK21ZdFRQMGxUMVltVk9ncWJtNEh5T1k2RzBVa2kyRnpDblJXS0lOSCtsQUlvUEdaYXN3PT0iLCJtYWMiOiIwNWI2NjNhYzlmOTMwNjI5NGUyYTkyNTZkMjM3Yjk5YTkyNTM3MjY5ZDY4ZGJmMmFhZTc5NzRlZWU1MjgzZjdmIn0%3D\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, sdch\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/appkr.dev\/articles?page=5\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"host\" => array:1 [\n    0 => \"appkr.dev\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"\"\n  ]\n]",
+    "request_server": "array:33 [\n  \"USER\" => \"corean\"\n  \"HOME\" => \"\/Users\/corean\"\n  \"HTTP_COOKIE\" => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6Ikh4NnRWS3JTUXR4cVBKSHNiOHJHbVE9PSIsInZhbHVlIjoiblwvRHdJdFFOemMzNlA5UmxcL1E2SGIxdUE0SjlNdHIwUXg4K05idk9oNmQzdVlcLzdQYjU4RExmVThudVVaUCtcL09zYllrY2c3WVdlTWkzMEtSZk9UbmFnPT0iLCJtYWMiOiIzOWVkYmQxYjM1ODIyMzIxZGU2YjdhNmIyNjRhNzI0NTA5ZTJiOWU3MmExNTExZDNiMTM4Y2RlNzRlODA5NjAxIn0%3D; laravel_session=eyJpdiI6IlpLcWlRMnBHendWTzZkZDNhYU1cL253PT0iLCJ2YWx1ZSI6ImkwZ2RLcGJhMmZqQnoyeU1LcEpFQzlMZ1crZm5uZjl6K01FK21ZdFRQMGxUMVltVk9ncWJtNEh5T1k2RzBVa2kyRnpDblJXS0lOSCtsQUlvUEdaYXN3PT0iLCJtYWMiOiIwNWI2NjNhYzlmOTMwNjI5NGUyYTkyNTZkMjM3Yjk5YTkyNTM3MjY5ZDY4ZGJmMmFhZTc5NzRlZWU1MjgzZjdmIn0%3D\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, sdch\"\n  \"HTTP_REFERER\" => \"http:\/\/appkr.dev\/articles?page=5\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_HOST\" => \"appkr.dev\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"SERVER_NAME\" => \"\"\n  \"SERVER_PORT\" => \"80\"\n  \"SERVER_ADDR\" => \"127.0.0.1\"\n  \"REMOTE_PORT\" => \"53362\"\n  \"REMOTE_ADDR\" => \"127.0.0.1\"\n  \"SERVER_SOFTWARE\" => \"nginx\/1.10.2\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"DOCUMENT_ROOT\" => \"\"\n  \"DOCUMENT_URI\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_URI\" => \"\/articles\/create\"\n  \"SCRIPT_NAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"CONTENT_LENGTH\" => \"\"\n  \"CONTENT_TYPE\" => \"\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"QUERY_STRING\" => \"\"\n  \"FCGI_ROLE\" => \"RESPONDER\"\n  \"PHP_SELF\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_TIME_FLOAT\" => 1483886553.9633\n  \"REQUEST_TIME\" => 1483886553\n]",
+    "request_cookies": "array:4 [\n  \"XDEBUG_SESSION\" => null\n  \"io\" => null\n  \"XSRF-TOKEN\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"laravel_session\" => \"0Szj5tRfVGVVoURxcuxmhZTDcFa2GN3rUze9BscG\"\n]",
+    "response_headers": "array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6ImxJY1BscHc2cW4yM2hCNHk2S2hNZlE9PSIsInZhbHVlIjoidWl2MWJDcE5JWWJETUFzMkNpQ2xVSmt5aTZOVmoraDRaNmdEbThOeElKVWlnQUE4c2R1S25KaHg2WlFBYkwxazhKS2VGYUtwMVUraHNHRDdTUWxUbEE9PSIsIm1hYyI6ImFjMjI3MWY4NGFiYWU0MDUzYWI4OTNmM2NkYmM0ZmYyMDgwMWEzMmZjYThhYzE5ZWVmMjUxYjJiYTU0ZDAzOGIifQ%3D%3D; expires=Sun, 08-Jan-2017 17:42:34 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6IkN1TytublJ2V0RRZjhqR3ZrWXlsdWc9PSIsInZhbHVlIjoiZVJXTFQ2dDRYWHlQSGRMSXpacEhxWnB0dFNFcUp2eUVrRFYzOXFmZkl3M2hCWThVanVndlFuekZacXBxOE8xaTVVTGllMWx6ckF4SFYxaFhld3FJS0E9PSIsIm1hYyI6ImY1YzU4ZTM2YjllZGFkMjVjZmI1YzI4MjAxMTI0ZjA2NTlkNDQ4MDBkOGUxYjQxMzM2ZWYyZmNhOTFkODIzMTcifQ%3D%3D; expires=Sun, 08-Jan-2017 17:42:34 GMT; path=\/; httponly\"\n  ]\n]",
+    "path_info": "\/articles\/create",
+    "session_attributes": "array:7 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"_flash\" => array:2 [\n    \"old\" => []\n    \"new\" => []\n  ]\n  \"flash_notification\" => []\n  \"url\" => array:1 [\n    \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 24\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n]"
+  }
+}

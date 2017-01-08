@@ -43,8 +43,19 @@ class User extends Authenticatable
         return $this->hasMany(Article::class);
     }
 
+    /**
+     * @param $query
+     * @param $email
+     * @return mixed
+     */
     public function scopeSocialUser($query, $email)
     {
         return $query->whereEmail($email)->whereNull('password');
+    }
+
+    public function isAdmin()
+    {
+        return ($this->id === 1) ? true : false;
+
     }
 }

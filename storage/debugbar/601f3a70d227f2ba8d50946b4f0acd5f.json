@@ -1,0 +1,220 @@
+{
+  "__meta": {
+    "id": "601f3a70d227f2ba8d50946b4f0acd5f",
+    "datetime": "2017-01-08 14:33:10",
+    "utime": 1483885990.951781,
+    "method": "GET",
+    "uri": "\/articles\/24",
+    "ip": "127.0.0.1"
+  },
+  "php": {
+    "version": "7.1.0",
+    "interface": "fpm-fcgi"
+  },
+  "messages": {
+    "count": 0,
+    "messages": []
+  },
+  "time": {
+    "start": 1483885990.702821,
+    "end": 1483885990.951813,
+    "duration": 0.2489919662475586,
+    "duration_str": "248.99ms",
+    "measures": [
+      {
+        "label": "Booting",
+        "start": 1483885990.702821,
+        "relative_start": 0,
+        "end": 1483885990.867836,
+        "relative_end": 1483885990.867836,
+        "duration": 0.16501498222351074,
+        "duration_str": "165.01ms",
+        "params": [],
+        "collector": null
+      },
+      {
+        "label": "Application",
+        "start": 1483885990.822724,
+        "relative_start": 0.1199030876159668,
+        "end": 1483885990.951815,
+        "relative_end": 1.9073486328125e-6,
+        "duration": 0.1290907859802246,
+        "duration_str": "129.09ms",
+        "params": [],
+        "collector": null
+      }
+    ]
+  },
+  "memory": {
+    "peak_usage": 4194304,
+    "peak_usage_str": "4MB"
+  },
+  "exceptions": {
+    "count": 0,
+    "exceptions": []
+  },
+  "views": {
+    "nb_templates": 7,
+    "templates": [
+      {
+        "name": "articles.show (resources\/views\/articles\/show.blade.php)",
+        "param_count": 1,
+        "params": [
+          "article"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "articles.partial.article (resources\/views\/articles\/partial\/article.blade.php)",
+        "param_count": 5,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "article"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "users.partial.avatar (resources\/views\/users\/partial\/avatar.blade.php)",
+        "param_count": 6,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "article",
+          "user"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.app (resources\/views\/layouts\/app.blade.php)",
+        "param_count": 5,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "article"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.navigation (resources\/views\/layouts\/partials\/navigation.blade.php)",
+        "param_count": 5,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "article"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "flash::message (vendor\/laracasts\/flash\/src\/views\/message.blade.php)",
+        "param_count": 5,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "article"
+        ],
+        "type": "blade"
+      },
+      {
+        "name": "layouts.partials.footer (resources\/views\/layouts\/partials\/footer.blade.php)",
+        "param_count": 5,
+        "params": [
+          "obLevel",
+          "__env",
+          "app",
+          "errors",
+          "article"
+        ],
+        "type": "blade"
+      }
+    ]
+  },
+  "route": {
+    "uri": "GET articles\/{article}",
+    "middleware": "web",
+    "as": "articles.show",
+    "controller": "App\\Http\\Controllers\\ArticlesController@show",
+    "namespace": "App\\Http\\Controllers",
+    "prefix": null,
+    "where": [],
+    "file": "app\/Http\/Controllers\/ArticlesController.php:67-71"
+  },
+  "queries": {
+    "nb_statements": 3,
+    "nb_failed_statements": 0,
+    "accumulated_duration": 0.006919999999999999,
+    "accumulated_duration_str": "6.92ms",
+    "statements": [
+      {
+        "sql": "select * from `articles` where `id` = '24' limit 1",
+        "params": {
+          "0": "24",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+        },
+        "duration": 0.00535,
+        "duration_str": "5.35ms",
+        "stmt_id": null,
+        "connection": "appkr"
+      },
+      {
+        "sql": "select * from `users` where `users`.`id` = '1' limit 1",
+        "params": {
+          "0": "1",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+        },
+        "duration": 0.0009699999999999999,
+        "duration_str": "970\u03bcs",
+        "stmt_id": null,
+        "connection": "appkr"
+      },
+      {
+        "sql": "select * from `users` where `users`.`id` = '24' limit 1",
+        "params": {
+          "0": "24",
+          "hints": "Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+        },
+        "duration": 0.0006,
+        "duration_str": "600\u03bcs",
+        "stmt_id": null,
+        "connection": "appkr"
+      }
+    ]
+  },
+  "swiftmailer_mails": {
+    "count": 0,
+    "mails": []
+  },
+  "session": {
+    "_token": "OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH",
+    "_previous": "array:1 [\n  \"url\" => \"http:\/\/appkr.dev\/articles\/24\"\n]",
+    "_flash": "array:2 [\n  \"old\" => []\n  \"new\" => []\n]",
+    "flash_notification": "[]",
+    "url": "array:1 [\n  \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n]",
+    "login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "24",
+    "PHPDEBUGBAR_STACK_DATA": "[]"
+  },
+  "request": {
+    "format": "html",
+    "content_type": "text\/html; charset=UTF-8",
+    "status_text": "OK",
+    "status_code": "200",
+    "request_query": "[]",
+    "request_request": "[]",
+    "request_headers": "array:12 [\n  \"cookie\" => array:1 [\n    0 => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6InhLWlVOYmhwQlRLV2xqbTU5Y3pLbGc9PSIsInZhbHVlIjoiY1R0ZFdWYkd3T1wvU29WeXdKMmlzcmxRTXl1eVlLWER3QnVOcm5nNUZYUU1EdmFoRDVlTEh2UVFMU1dxNlJcL3Awc3JUSFFUK1wvWGJJaGZ4YlhvUHMzUXc9PSIsIm1hYyI6IjdmYmM2Y2JiN2JkMjQ4ZTMwZWZkNGJjZmVkOTkzZjRlMWMwYTg2MWQ1YzgyNWE0NGNmOTk2MGRlYWE3NjM3ZjEifQ%3D%3D; laravel_session=eyJpdiI6ImxDVDREVThNZWxVT3pwdThGNE9oc2c9PSIsInZhbHVlIjoicjZ2bjJNUmlvQUF2VWdPVEhPTmtidDg5NkhXTStkWFNNR0YxakpQVWJcL1hZc085Z3pmZzc5N1lVUEZRZ2VrcTdnWnJUdkpOVmdlSzUzbFhSNVJjYzFRPT0iLCJtYWMiOiIyMjdlZDE3NTkwYzAxYTdkYTBjOWEyYjIwOTAxZGZkMzIyZDE3ZGE5YTQ0YjBmNjYzYzJjNzNkZTk5YWIyOTBmIn0%3D\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, sdch\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/appkr.dev\/articles\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"cache-control\" => array:1 [\n    0 => \"max-age=0\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"host\" => array:1 [\n    0 => \"appkr.dev\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"\"\n  ]\n]",
+    "request_server": "array:34 [\n  \"USER\" => \"corean\"\n  \"HOME\" => \"\/Users\/corean\"\n  \"HTTP_COOKIE\" => \"XDEBUG_SESSION=PHPSTORM; io=fZKWnfenL79Pilb-AAAV; XSRF-TOKEN=eyJpdiI6InhLWlVOYmhwQlRLV2xqbTU5Y3pLbGc9PSIsInZhbHVlIjoiY1R0ZFdWYkd3T1wvU29WeXdKMmlzcmxRTXl1eVlLWER3QnVOcm5nNUZYUU1EdmFoRDVlTEh2UVFMU1dxNlJcL3Awc3JUSFFUK1wvWGJJaGZ4YlhvUHMzUXc9PSIsIm1hYyI6IjdmYmM2Y2JiN2JkMjQ4ZTMwZWZkNGJjZmVkOTkzZjRlMWMwYTg2MWQ1YzgyNWE0NGNmOTk2MGRlYWE3NjM3ZjEifQ%3D%3D; laravel_session=eyJpdiI6ImxDVDREVThNZWxVT3pwdThGNE9oc2c9PSIsInZhbHVlIjoicjZ2bjJNUmlvQUF2VWdPVEhPTmtidDg5NkhXTStkWFNNR0YxakpQVWJcL1hZc085Z3pmZzc5N1lVUEZRZ2VrcTdnWnJUdkpOVmdlSzUzbFhSNVJjYzFRPT0iLCJtYWMiOiIyMjdlZDE3NTkwYzAxYTdkYTBjOWEyYjIwOTAxZGZkMzIyZDE3ZGE5YTQ0YjBmNjYzYzJjNzNkZTk5YWIyOTBmIn0%3D\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"ko,en-US;q=0.8,en;q=0.6,zh;q=0.4,zh-CN;q=0.2,zh-TW;q=0.2\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, sdch\"\n  \"HTTP_REFERER\" => \"http:\/\/appkr.dev\/articles\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_CACHE_CONTROL\" => \"max-age=0\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_HOST\" => \"appkr.dev\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"SERVER_NAME\" => \"\"\n  \"SERVER_PORT\" => \"80\"\n  \"SERVER_ADDR\" => \"127.0.0.1\"\n  \"REMOTE_PORT\" => \"53247\"\n  \"REMOTE_ADDR\" => \"127.0.0.1\"\n  \"SERVER_SOFTWARE\" => \"nginx\/1.10.2\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"DOCUMENT_ROOT\" => \"\"\n  \"DOCUMENT_URI\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_URI\" => \"\/articles\/24\"\n  \"SCRIPT_NAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"CONTENT_LENGTH\" => \"\"\n  \"CONTENT_TYPE\" => \"\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"QUERY_STRING\" => \"\"\n  \"FCGI_ROLE\" => \"RESPONDER\"\n  \"PHP_SELF\" => \"\/Users\/corean\/.composer\/vendor\/laravel\/valet\/server.php\"\n  \"REQUEST_TIME_FLOAT\" => 1483885990.7028\n  \"REQUEST_TIME\" => 1483885990\n]",
+    "request_cookies": "array:4 [\n  \"XDEBUG_SESSION\" => null\n  \"io\" => null\n  \"XSRF-TOKEN\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"laravel_session\" => \"0Szj5tRfVGVVoURxcuxmhZTDcFa2GN3rUze9BscG\"\n]",
+    "response_headers": "array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6ImNMSmttN1hUMnA4U3ZkaVwvUEVBendRPT0iLCJ2YWx1ZSI6ImJ5UkdiNG9yTUpCa1AxaXJcL3BQRml5Q1wvRDlaRTlcL2gra05Ec3ZHUCtPM3Rpa2pIelE1OXYzTFZ5XC9cL3hnOGRnRFU5WFYyY09zbmJVM3BENHo4VTJPUHc9PSIsIm1hYyI6IjA1ZGUxNjI3OThiN2UzN2JjOTRjZDcxMGE1NWZkZTViMTNlNzE5MzI1YmRkZDFiMTRmOWQ4NGIxNjRlODcxOGIifQ%3D%3D; expires=Sun, 08-Jan-2017 17:33:10 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6ImNEU2xIdXEzU2Jub1FyZ2RsZzRtUlE9PSIsInZhbHVlIjoiKzIxaE9GaEFsck03WTZMSWVuUVowNmdIQ0dYNXFqaDNvdHBWMTh4dGhJWjFUbmdPaTRuaUI3OWVqS1U3ZWlUXC9CTFZiWjBcL0hRZEVcL2hKR3BcL1hMZ3hRPT0iLCJtYWMiOiI1Yzc2YzM5ZGFjNzhiZjU2MWIzNTFkZDgzYzIxYWI4YzQ4OWNlZGI1MTM3MWM0ZDQ0MWFiMzU4YWU1Yzg3ZWY4In0%3D; expires=Sun, 08-Jan-2017 17:33:10 GMT; path=\/; httponly\"\n  ]\n]",
+    "path_info": "\/articles\/24",
+    "session_attributes": "array:7 [\n  \"_token\" => \"OI9Uz7GgTSvSZqQx6O5ieJjeG62uAli3v0x0FelH\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/appkr.dev\/articles\/24\"\n  ]\n  \"_flash\" => array:2 [\n    \"old\" => []\n    \"new\" => []\n  ]\n  \"flash_notification\" => []\n  \"url\" => array:1 [\n    \"intended\" => \"http:\/\/appkr.dev\/articles\/create\"\n  ]\n  \"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 24\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n]"
+  }
+}
